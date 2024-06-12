@@ -1,0 +1,1 @@
+Erro ao consumir api status-receita -> AxiosError: Request failed with status code 401
