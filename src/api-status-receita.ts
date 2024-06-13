@@ -18,6 +18,9 @@ class apiStatusReceita {
         }
       );
       const data = res.data;
+      if (res.data.length === 0) {
+        throw Error("O retorno da api veio vazio");
+      }
       inserirInformacoesBD(data, connectionDB);
       return data;
     } catch (error: any) {
